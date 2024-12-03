@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahDaftar">
+
+    <EditText
+        android:id="@+id/etItem"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Masukkan Nama Item"
+        android:layout_margin="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/etJumlah"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Masukkan Jumlah Item"
+        android:layout_margin="24dp"
+        app:layout_constraintTop_toBottomOf="@id/etItem"
+        app:layout_constraintStart_toStartOf="@id/etItem"
+        app:layout_constraintEnd_toEndOf="@id/etItem"/>
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAMBAH"
+        android:backgroundTint="#34aeeb"
+        android:layout_marginStart="64dp"
+        app:layout_constraintTop_toBottomOf="@id/etJumlah"
+        app:layout_constraintStart_toStartOf="@id/etJumlah"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2ce897"
+        android:text="UPDATE"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/etJumlah"
+        app:layout_constraintTop_toTopOf="@id/btnTambah" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
